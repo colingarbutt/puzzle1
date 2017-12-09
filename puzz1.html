@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    canvas {
+      border: 1px solid #d3d3d3;
+      background-color: #f5f5f5;
+    }
+  </style>
+  <script src="pieces.js"></script>
+  <script src="puzz1.js"></script>
+</head>
+
+<body onload="start()">
+
+  <table>
+    <tr>
+      <td>
+        <canvas id="puzzle_board" width="330" height="320"></canvas>
+      </td>
+      <td>
+        <pre id="stack"></pre></br>
+        Batch size: <span id="batch">0</span></br>
+        Batches executed: <span id="batches">0</span></br>
+        Batch time: <span id="btime">0</span> ms</br>
+        Status: <span id="status"></span></br>
+        Debug: <span id="debug"></span></br>
+        <button id="abort" onclick="abort()">Abort</button></br>
+        <button id="step" onclick="step()">Step</button>
+        <button id="continue" onclick="cont()">Continue</button>
+
+      </td>
+
+    </tr>
+  </table>
+
+
+</body>
+
+</html>
